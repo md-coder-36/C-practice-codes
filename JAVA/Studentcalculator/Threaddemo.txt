@@ -1,0 +1,21 @@
+
+The JVM divides the memory into two parts: stack memory and heap memory.
+From the perspective of Java, both are important memory areas but both are
+used for different purposes.
+The major difference between Stack memory and heap memory is that the stack
+is used to store the order of method execution and local variables
+while the heap memory stores the objects and it uses dynamic memory
+allocation and deallocation
+
+STACK MEMORY : stack memory is a physical space (in RAM) allocated to each
+thread at run time.
+It is created when a thread creates.
+Memory management in the stack follows LIFO (Last-In-First-Out) order because
+it is accessible globally.
+It stores the variables, references to objects, and partial results.
+Memory allocated to stack lives until the function returns.
+If there is no space for creating the new objects, it throws the
+java.lang.StackOverFlowError.
+The scope of the elements is limited to their threads.
+The JVM creates a separate stack for each thread.
+https://www.javatpoint.com/stack-vs-heap-java 
